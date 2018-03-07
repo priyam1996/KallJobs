@@ -80,17 +80,23 @@ public class HomePage extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_alljobs) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_govt) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_central) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_bank) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_railway) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_police) {
+
+        } else if (id == R.id.nav_freshers){
+
+        } else if (id == R.id.nav_it){
+
+        } else if (id == R.id.nav_nonit){
 
         }
 
