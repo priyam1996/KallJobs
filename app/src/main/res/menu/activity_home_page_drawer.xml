@@ -5,21 +5,41 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_alljobs"
+            android:icon="@drawable/home"
+            android:title="All Jobs" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/nav_govt"
+            android:icon="@drawable/government"
+            android:title="Govt Jobs" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/nav_central"
+            android:icon="@drawable/central"
+            android:title="Central Jobs" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_bank"
+            android:icon="@drawable/bank"
+            android:title="Bank Jobs" />
+        <item
+            android:id="@+id/nav_railway"
+            android:icon="@drawable/railway"
+            android:title="Railway Jobs" />
+        <item
+            android:id="@+id/nav_police"
+            android:icon="@drawable/police"
+            android:title="Police Jobs" />
+        <item
+            android:id="@+id/nav_freshers"
+            android:icon="@drawable/freshers"
+            android:title="Freshers Jobs" />
+        <item
+            android:id="@+id/nav_it"
+            android:icon="@drawable/it"
+            android:title="IT Jobs" />
+        <item
+            android:id="@+id/nav_nonit"
+            android:icon="@drawable/non_it"
+            android:title="NON IT Jobs" />
     </group>
 
     <item android:title="Communicate">
@@ -28,10 +48,6 @@
                 android:id="@+id/nav_share"
                 android:icon="@drawable/ic_menu_share"
                 android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
         </menu>
     </item>
 
