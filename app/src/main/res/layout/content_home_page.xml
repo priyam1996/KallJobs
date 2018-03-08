@@ -1,20 +1,309 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.kuncham.kalljobs.HomePage"
-    tools:showIn="@layout/app_bar_home_page">
+    tools:showIn="@layout/app_bar_home_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_margin="5dp">
 
-</android.support.constraint.ConstraintLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/bt1_govt"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GOVT jobs"
+                    android:background="@drawable/govt_shadow"/>
+
+                 <ListView
+                     android:id="@+id/govt_lv"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_below="@id/bt1_govt"/>
+                 <Button
+                     android:id="@+id/bt2_govt"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="Click here for more jobs"
+                     android:layout_below="@id/govt_lv"
+                     android:background="@drawable/govt_border"
+                     android:layout_centerHorizontal="true"
+                     android:padding="10dp"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv1"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/bt1_central"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Central jobs"
+                android:background="@drawable/central_shadow"/>
+
+            <ListView
+                android:id="@+id/central_lv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bt1_central"/>
+            <Button
+                android:id="@+id/bt2_central"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click here for more jobs"
+                android:layout_below="@id/central_lv"
+                android:background="@drawable/central_border"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv2"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/bt1_bank"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bank jobs"
+                android:background="@drawable/govt_shadow"/>
+
+            <ListView
+                android:id="@+id/bank_lv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bt1_bank"/>
+            <Button
+                android:id="@+id/bt2_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click here for more jobs"
+                android:layout_below="@id/bank_lv"
+                android:background="@drawable/govt_border"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv3"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/bt1_railway"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Railway jobs"
+                android:background="@drawable/central_shadow"/>
+
+            <ListView
+                android:id="@+id/railway_lv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bt1_railway"/>
+            <Button
+                android:id="@+id/bt2_railway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click here for more jobs"
+                android:layout_below="@id/railway_lv"
+                android:background="@drawable/central_border"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv4"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/bt1_police"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Police jobs"
+                android:background="@drawable/govt_shadow"/>
+
+            <ListView
+                android:id="@+id/police_lv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bt1_police"/>
+            <Button
+                android:id="@+id/bt2_police"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click here for more jobs"
+                android:layout_below="@id/police_lv"
+                android:background="@drawable/govt_border"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv5"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/bt1_freshers"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Central jobs"
+                android:background="@drawable/central_shadow"/>
+
+            <ListView
+                android:id="@+id/freshers_lv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bt1_freshers"/>
+            <Button
+                android:id="@+id/bt2_freshers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click here for more jobs"
+                android:layout_below="@id/freshers_lv"
+                android:background="@drawable/central_border"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv6"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/bt1_it"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IT jobs"
+                android:background="@drawable/govt_shadow"/>
+
+            <ListView
+                android:id="@+id/it_lv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bt1_it"/>
+            <Button
+                android:id="@+id/bt2_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click here for more jobs"
+                android:layout_below="@id/it_lv"
+                android:background="@drawable/govt_border"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv7"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/bt1_non_it"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Non-IT jobs"
+                android:background="@drawable/central_shadow"/>
+
+            <ListView
+                android:id="@+id/non_it_lv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bt1_non_it"/>
+            <Button
+                android:id="@+id/bt2_non_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click here for more jobs"
+                android:layout_below="@id/non_it_lv"
+                android:background="@drawable/central_border"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"/>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
+</ScrollView>
