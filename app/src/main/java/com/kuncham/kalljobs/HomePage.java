@@ -1,5 +1,6 @@
 package com.kuncham.kalljobs;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -81,6 +82,9 @@ public class HomePage extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_alljobs) {
+
+            Intent alljobsIntent = new Intent(this,AllJobsActivity.class);
+            startActivity(alljobsIntent);
             // Handle the camera action
         } else if (id == R.id.nav_govt) {
 
