@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -60,13 +61,13 @@ public class AlljobsAdapter extends BaseAdapter {
         ImageView imageAlljob = (ImageView)alljobsView.findViewById(R.id.image_alljobs);
         TextView headAlljob = (TextView)alljobsView.findViewById(R.id.heading_alljobs);
         TextView contentAlljob = (TextView)alljobsView.findViewById(R.id.content_alljobs);
-        TextView readAlljob = (TextView)alljobsView.findViewById(R.id.readmore_alljobs);
+        //Button readAlljob = (Button) alljobsView.findViewById(R.id.readmore_alljobs);
 
         Alljobs aj=alljobsList.get(i);
 
         headAlljob.setText(aj.getHeadAlljobs());
         contentAlljob.setText(aj.getContentALljobs());
-        readAlljob.setText(aj.getReadMore());
+       // readAlljob.setText(aj.getReadMore());
         mAlljobsImage.displayImage(aj.getImageAlljobs(),imageAlljob);
 
         return alljobsView;
