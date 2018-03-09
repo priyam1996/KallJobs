@@ -41,13 +41,13 @@
             android:layout_margin="5sp"
             android:hint="Content ALl jobs "/>
 
-        <TextView
+        <Button
             android:id="@+id/readmore_alljobs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toRightOf="@id/image_alljobs"
             android:layout_below="@id/content_alljobs"
-            android:background="@drawable/border"
+            android:background="#00f"
             android:text="READ MORE"/>
 
 
